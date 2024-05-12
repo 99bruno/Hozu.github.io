@@ -3,18 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваша сторінка</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Про стартап Hozu</title>
+    <!-- Підключення стилів Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Додаткові стилі можна включити тут */
+        .navbar-brand img {
+            max-height: 40px; /* регулюємо висоту логотипу */
+            margin-right: 10px; /* додамо відступ між логотипом і текстом */
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <button id="presentationBtn">Презентація</button>
-        <button id="codeBtn">Код</button>
-        <button id="backBtn" style="display: none;">Назад</button>
+
+<!-- Навігаційне меню -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Логотип або назва стартапу -->
+    <a class="navbar-brand" href="#">
+        <img src="Makets/Logo_var5.png" alt="Hozu Logo"> <!-- замініть "your_logo.png" на шлях до вашого логотипу -->
+        Hozu
+    </a>
+    <!-- Посилання на розділи -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Про нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#team">Команда</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Функції</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#analysis">Аналіз</a>
+            </li>
+        </ul>
     </div>
-    <script src="script.js"></script>
-<div>
-    <h1>Hi</h1>
-</div>
+</nav>
+
+<main class="container">
+    <!-- Секція "Про нас" -->
+    <section id="about" class="py-5">
+        <h2>Про нас</h2>
+        <p>Стартап Hozu пропонує інноваційні рішення у сфері...</p>
+    </section>
+
+    <!-- Секція "Команда" -->
+    <section id="team" class="py-5">
+        <h2>Команда</h2>
+        <p>Наша команда складається з висококваліфікованих фахівців у галузі...</p>
+    </section>
+
+    <!-- Секція "Функції" -->
+    <section id="features" class="py-5">
+        <h2>Функції</h2>
+        <p>Наш продукт має такі основні функції:</p>
+        <ul>
+            <li>Функція 1</li>
+            <li>Функція 2</li>
+            <li>Функція 3</li>
+        </ul>
+    </section>
+
+    <!-- Секція "Аналіз" -->
+    <section id="analysis" class="py-5">
+        <h2>Аналіз</h2>
+        <p>Ми провели аналіз ринку та виявили, що наш продукт має...</p>
+    </section>
+</main>
+
+<footer class="footer bg-light text-center py-3">
+    <!-- Футер з контактною інформацією або іншими посиланнями -->
+    <p>&copy; 2024 Hozu. Усі права захищені.</p>
+</footer>
+
+<!-- Підключення скриптів Bootstrap та jQuery (для деяких компонентів Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
