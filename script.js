@@ -1,18 +1,14 @@
-const presentationBtn = document.getElementById('presentationBtn');
-const codeBtn = document.getElementById('codeBtn');
-const content = document.getElementById('content');
-const backBtn = document.getElementById('backBtn');
-
-presentationBtn.addEventListener('click', function() {
-    content.innerHTML = '<iframe src="Presentation_1.html" class="fullscreen" frameborder="0"></iframe>';
-});
-
-codeBtn.addEventListener('click', function() {
-    content.innerHTML = '<pre><code>// Ваш код тут</code></pre>';
-});
+// Ініціалізація карти
+/* global L */
+var mymap = L.map('map').setView([51.505, -0.09], 13);
 
 
+// Додавання шару карт OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+}).addTo(mymap);
 
-if (window.innerWidth <= 768) { // Якщо ширина екрану менше або рівна 768px (тобто, мобільний пристрій)
-    backBtn.style.display = 'block';
-}
+// Додавання позначки
+L.marker([51.5, -0.09]).addTo(mymap)
+    .bindPopup('Місце розташування.')
+    .openPopup();

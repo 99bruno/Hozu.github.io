@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про стартап Hozu</title>
+    <title>Hozu</title>
     <!-- Підключення стилів Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Додаткові стилі можна включити тут */
-        .navbar-brand img {
-            max-height: 40px; /* регулюємо висоту логотипу */
-            margin-right: 10px; /* додамо відступ між логотипом і текстом */
-        }
-    </style>
+    <!-- Підключення стилів для карти -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+
+    <!-- Підключення стилів для власного CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -20,7 +20,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Логотип або назва стартапу -->
     <a class="navbar-brand" href="#">
-        <img src="Makets/Logo_var5.png" alt="Hozu Logo"> <!-- замініть "your_logo.png" на шлях до вашого логотипу -->
+
+        <img src="Makets/Logo_var5.png" alt="Hozu Logo" id="logo">
+
         Hozu
     </a>
     <!-- Посилання на розділи -->
@@ -42,6 +44,8 @@
     </div>
 </nav>
 
+
+
 <main class="container">
     <!-- Секція "Про нас" -->
     <section id="about" class="py-5">
@@ -61,6 +65,11 @@
         <p>Наш продукт має такі основні функції:</p>
         <ul>
             <li>Функція 1</li>
+  
+    <!-- Карта з індивідуальними позначками -->
+                <div id="map"></div>
+
+
             <li>Функція 2</li>
             <li>Функція 3</li>
         </ul>
@@ -81,5 +90,10 @@
 <!-- Підключення скриптів Bootstrap та jQuery (для деяких компонентів Bootstrap) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+
+
 </body>
 </html>

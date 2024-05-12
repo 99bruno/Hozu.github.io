@@ -1,34 +1,10 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+#map {
+    height: 400px;
     width: 100%;
-    background-color: #333;
-    padding: 10px;
 }
+#logo {
+    max-height: 40px; /* регулюємо висоту логотипу */
+    margin-right: 10px; /* додамо відступ між логотипом і текстом */
+    border-radius: 25% 10%;
 
-.navbar button {
-    padding: 8px 16px;
-    margin-right: 10px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #555;
-    border: none;
-    border-radius: 5px;
 }
-
-.content {
-    margin-top: 50px; /* Відступ від верхньої панелі навігації */
-}
-
-iframe {
-    width: 100vw;
-    height: 100vh;
-}
-
-
