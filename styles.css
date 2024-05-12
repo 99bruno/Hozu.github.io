@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#content {
+    margin-top: 20px;
+}
