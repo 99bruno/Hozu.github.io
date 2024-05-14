@@ -33,6 +33,98 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
 }
 
+/* Стилізація слайдера ціни */
+#price-slider {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Стилізація позначки на слайдері */
+#price-values {
+    margin-top: 1px;
+
+}
+
+/* Стилізація бару слайдера */
+
+/* Стилізація слайдера ціни */
+#price-slider {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+#price-slider .bar {
+    height: 100%;
+    background-color: #05DA9D; /* Зелений колір */
+    border-radius: 10px;
+}
+
+/* Стилізація позначок крайових значень */
+#price-slider .bar .tooltip-inner {
+    background-color: #05DA9D; /* Зелений колір */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Стилізація рухомого ползунка */
+#price-slider .slider {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #05DA9D; /* Зелений колір */
+    border-radius: 50%;
+}
+
+
+/* Стилізація вибору дати */
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стилізація підказки */
+input[type="date"]::placeholder {
+    color: #aaa;
+}
+
+/* Стилізація випадаючого списку */
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стилізація текстового поля */
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стилізація кнопки пошуку */
+.search-button {
+    padding: 5px 10px;
+    background-color: #05DA9D; /* Зелений колір */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 .photo-background-Elego img {
     border-radius: 10px;
@@ -69,7 +161,9 @@ body {
     transform: translateY(0);
 }
 
-
+#footer {
+    background-color: black !important;
+}
 
 
 
