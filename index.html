@@ -8,16 +8,14 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Підключення стилів для карти -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-
-
     <!-- Підключення стилів для власного CSS -->
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
 <!-- Навігаційне меню -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar" id="x">
     <!-- Логотип або назва стартапу -->
     <a class="navbar-brand" href="#">
 
@@ -64,10 +62,11 @@
         <h2>Функції</h2>
         <p>Наш продукт має такі основні функції:</p>
         <ul>
-            <li>Функція 1</li>
+            <li>Карта з усіма ресторанами</li>
         </ul>
     <!-- Карта з індивідуальними позначками -->
-        <div id="map"></div>
+        <iframe src="Maps/map.html" id="map" width="100%" height="600px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
 
         <ul>
             <li>Функція 2</li>
@@ -92,8 +91,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="script.js"></script>
-
-
 
 </body>
 </html>

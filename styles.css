@@ -4,6 +4,31 @@
     border-radius: 25% 10%;
 }
 
+body {
+    background-color: #F0ECE4; /* Світло-бежевий колір */
+}
+
+
+
+.custom-navbar {
+    background-color: #05DA9D !important;
+
+}
+
+/* Застосовуємо кастомні стилі до навігаційного меню */
+.navbar-light.bg-light.custom-navbar {
+    background-color: blue;
+    border-color: blue;
+}
+
+
+/* Застосовуємо кастомні кольори тексту при наведенні */
+.navbar-light.bg-light.custom-navbar .navbar-nav .nav-link:hover {
+    color: black;
+
+}
+
+
 #map {
     height: 500px; /* Встановлюємо висоту карти */
     width: 100%; /* Займаємо всю доступну ширину */
